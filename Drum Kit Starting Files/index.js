@@ -10,11 +10,14 @@ var numberOfDrums = document.querySelectorAll(".drum").length;
 for (var i = 0; i < numberOfDrums; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function handleClick() {
         console.log(this.style.color = "white");
-        var audio = new Audio('/sounds/tom-1.mp3');
-        console.log(audio.play());
+
     })
 
 }
+
+// var audio = new Audio('/sounds/tom-1.mp3');
+// console.log(audio.play());
+
 
 
 
