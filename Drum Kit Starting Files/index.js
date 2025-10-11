@@ -3,15 +3,29 @@
 // });
 
 
+
+
+
+
 var numberOfDrums = document.querySelectorAll(".drum").length;
-var audio = new Audio('/sounds/tom-1.mp3');
+
 
 for (var i = 0; i < numberOfDrums; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function handleClick() {
-        console.log(audio.play());
+        console.log(this.style.color = "white");
     })
 
 }
+
+
+
+// var audio = new Audio('/sounds/tom-1.mp3');
+// console.log(audio.play());
+
+
+
+
+
 
 
 // document.querySelectorAll(".drum")[0].addEventListener("click", function () {
