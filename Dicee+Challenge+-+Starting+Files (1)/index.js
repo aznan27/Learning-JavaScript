@@ -24,15 +24,21 @@ function rollDice(player) {
         diceOne = Math.floor(diceOne) + 1;
         let diceImage1 = "images/dice" + diceOne + ".png";
         imgDiceOne.setAttribute("src", diceImage1);
+        btnOne.style.cursor = 'not-allowed';
         btnOne.setAttribute("disabled", 'true')
+
     } else {
         diceTwo = Math.random();
         diceTwo = diceTwo * 6;
         diceTwo = Math.floor(diceTwo) + 1;
         let diceImage2 = "images/dice" + diceTwo + ".png";
         imgDiceTwo.setAttribute("src", diceImage2);
+        btnTwo.style.cursor = 'not-allowed';
         btnTwo.setAttribute("disabled", 'true')
     }
+
+
+
     if (diceOne && diceTwo) {
         if (diceOne > diceTwo) {
             console.log(result.innerHTML = "Player 1 Wins!");
@@ -49,8 +55,9 @@ btnOne.addEventListener("click", () => rollDice("one"))
 btnTwo.addEventListener("click", () => rollDice("two"))
 refreshBtn.addEventListener("click", refresh)
 
-
-
-
-
-
+// if (btnOne === "clicked") {
+//         btnOne.style.cursor = 'not-allowed';
+//     }
+//     else if (btnTwo === "clicked") {
+//         btnTwo.style.cursor = 'not-allowed';
+//     }

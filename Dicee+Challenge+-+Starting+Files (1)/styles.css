@@ -32,6 +32,34 @@ img {
   width: 80%;
 }
 
+.btn-one {
+  display: flex;
+  color: bisque;
+  background-color: brown;
+  margin: 2rem 10rem;
+  padding: 0.7rem;
+  border-radius: 20%;
+
+
+}
+
+.btn-two {
+  display: flex;
+  color: bisque;
+  background-color: brown;
+  margin: 2rem 10rem;
+  padding: 0.7rem;
+  border-radius: 20%;
+}
+
+.refresh {
+  color: bisque;
+  background-color: brown;
+  margin: 2rem 10rem;
+  padding: 0.7rem;
+  border-radius: 5%;
+}
+
 footer {
   margin-top: 5%;
   color: #EEEEEE;
