@@ -1,3 +1,1 @@
-const abc = () => {
-
-}
+alert("Hello")
